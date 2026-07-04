@@ -18,26 +18,26 @@ This folder is intentionally outside the application source so the app directory
 By default, tests use this local app path:
 
 ```text
-C:\Users\sheik\My_Porject\LangNation Dictionary\Web\langnation-dictionary-v19
+My_Porject\LangNation Dictionary\Testing\langnation-dictionary-v19
 ```
 
 You can override it:
 
 ```powershell
-$env:LANGNATION_PROJECT_ROOT="C:\path\to\langnation-dictionary-v19"
+$env:LANGNATION_PROJECT_ROOT="langnation-dictionary-vxx"
 ```
 
 Or run against an already running app:
 
 ```powershell
-pytest --base-url http://localhost:3000
+pytest --base-url http://localhost:
 pytest --base-url https://your-staging-url.example
 ```
 
 ## Local setup
 
 ```powershell
-cd "C:\Users\sheik\Documents\Codex\2026-07-04\te\testing"
+cd "Documents\test\testing"
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements-test.txt
@@ -103,7 +103,7 @@ tests_py/test_data/login_users.local.json
 Then run:
 
 ```powershell
-$env:LANGNATION_LOGIN_DATA="C:\Users\sheik\My_Porject\LangNation Dictionary\Web\Testing\tests_py\test_data\login_users.local.json"
+$env:LANGNATION_LOGIN_DATA="\Testing\tests_py\test_data\login_users.local.json"
 pytest -m auth
 ```
 
