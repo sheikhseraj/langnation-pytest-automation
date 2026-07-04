@@ -1,0 +1,11 @@
+{
+  "valid_user": {
+    "email": "qa.sheikhseraj1@gmail.com",
+    "password": "17655241842",
+    "name": "QA User"
+  },
+  "invalid_user": {
+    "email": "wrong.user@example.com",
+    "password": "WrongPassword123!"
+  }
+}
